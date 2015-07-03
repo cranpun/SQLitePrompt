@@ -37,15 +37,24 @@
             // 
             // dataGridView_prompt
             // 
+            this.dataGridView_prompt.AllowUserToAddRows = false;
+            this.dataGridView_prompt.AllowUserToDeleteRows = false;
+            this.dataGridView_prompt.AllowUserToOrderColumns = true;
+            this.dataGridView_prompt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_prompt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_prompt.Location = new System.Drawing.Point(1, 1);
             this.dataGridView_prompt.Name = "dataGridView_prompt";
+            this.dataGridView_prompt.ReadOnly = true;
             this.dataGridView_prompt.RowTemplate.Height = 21;
-            this.dataGridView_prompt.Size = new System.Drawing.Size(863, 379);
+            this.dataGridView_prompt.Size = new System.Drawing.Size(863, 373);
             this.dataGridView_prompt.TabIndex = 0;
             // 
             // textBox_prompt
             // 
+            this.textBox_prompt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_prompt.Location = new System.Drawing.Point(1, 430);
             this.textBox_prompt.Multiline = true;
             this.textBox_prompt.Name = "textBox_prompt";
@@ -55,6 +64,8 @@
             // 
             // textBox_log
             // 
+            this.textBox_log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_log.Location = new System.Drawing.Point(1, 380);
             this.textBox_log.Multiline = true;
             this.textBox_log.Name = "textBox_log";
@@ -65,12 +76,14 @@
             // 
             // button_exec
             // 
+            this.button_exec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_exec.Location = new System.Drawing.Point(777, 520);
             this.button_exec.Name = "button_exec";
             this.button_exec.Size = new System.Drawing.Size(75, 23);
             this.button_exec.TabIndex = 3;
-            this.button_exec.Text = "exec";
+            this.button_exec.Text = "exec(&e)";
             this.button_exec.UseVisualStyleBackColor = true;
+            this.button_exec.Click += new System.EventHandler(this.button_exec_Click);
             // 
             // Form_Main
             // 
