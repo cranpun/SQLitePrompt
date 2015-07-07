@@ -200,6 +200,13 @@ namespace SQLitePrompt
             }
         }
 
+        static public void setPassword(string password)
+        {
+            SQLiteUtils.open();
+            SQLiteUtils.CON.ChangePassword(password);
+            SQLiteUtils.close();
+        }
+
         static public string getValRC(object[,] data, int row, string[] columns, string column)
         {
             return data[row, Array.IndexOf(columns, column)].ToString();

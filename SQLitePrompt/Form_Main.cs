@@ -106,5 +106,24 @@ namespace SQLitePrompt
             }
         }
 
+        private void setPasswordPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SQLiteUtils.path != null)
+            {
+                Form_inputText form = new Form_inputText();
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    SQLiteUtils.setPassword(form.textBox_input.Text);
+                    SQLiteUtils.pass = form.textBox_input.Text;
+                    MessageBox.Show("changed password");
+                }
+                else
+                {
+                    MessageBox.Show("no opened file.");
+                }
+
+            }
+        }
+
     }
 }
