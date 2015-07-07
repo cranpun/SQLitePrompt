@@ -21,5 +21,10 @@ namespace SQLitePrompt
         {
             this.DialogResult = DialogResult.OK;
         }
+
+        private void textBox_input_KeyDown(object sender, KeyEventArgs e)
+        {
+            MyUtils.textBoxSelectAll(sender, e);
+        }
     }
 }

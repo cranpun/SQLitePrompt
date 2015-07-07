@@ -125,5 +125,10 @@ namespace SQLitePrompt
             }
         }
 
+        private void textBox_prompt_KeyDown(object sender, KeyEventArgs e)
+        {
+            MyUtils.textBoxSelectAll(sender, e);
+        }
+
     }
 }

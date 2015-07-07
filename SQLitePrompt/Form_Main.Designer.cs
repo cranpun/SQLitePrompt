@@ -65,6 +65,7 @@
             this.textBox_prompt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_prompt.Size = new System.Drawing.Size(863, 84);
             this.textBox_prompt.TabIndex = 1;
+            this.textBox_prompt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_prompt_KeyDown);
             // 
             // textBox_log
             // 
