@@ -9,11 +9,16 @@ namespace SQLitePrompt
 {
     class MyUtils
     {
-        public static void textBoxSelectAll(object sender, KeyEventArgs e)
+        public static bool textBoxSelectAll(object sender, KeyEventArgs e)
         {
             if (e.Control && e.KeyCode == Keys.A) {
                 TextBox textBox = (TextBox)sender;
                 textBox.SelectAll();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

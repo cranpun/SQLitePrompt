@@ -35,6 +35,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setPasswordPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newDBNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilsUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showTablesSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_prompt)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +96,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileFToolStripMenuItem});
+            this.fileFToolStripMenuItem,
+            this.utilsUToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(864, 26);
@@ -103,6 +107,7 @@
             // fileFToolStripMenuItem
             // 
             this.fileFToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newDBNToolStripMenuItem,
             this.setPasswordPToolStripMenuItem});
             this.fileFToolStripMenuItem.Name = "fileFToolStripMenuItem";
             this.fileFToolStripMenuItem.Size = new System.Drawing.Size(57, 22);
@@ -114,6 +119,28 @@
             this.setPasswordPToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.setPasswordPToolStripMenuItem.Text = "Set Password(&P)";
             this.setPasswordPToolStripMenuItem.Click += new System.EventHandler(this.setPasswordPToolStripMenuItem_Click);
+            // 
+            // newDBNToolStripMenuItem
+            // 
+            this.newDBNToolStripMenuItem.Name = "newDBNToolStripMenuItem";
+            this.newDBNToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.newDBNToolStripMenuItem.Text = "New DB(&N)";
+            this.newDBNToolStripMenuItem.Click += new System.EventHandler(this.newDBNToolStripMenuItem_Click);
+            // 
+            // utilsUToolStripMenuItem
+            // 
+            this.utilsUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showTablesSToolStripMenuItem});
+            this.utilsUToolStripMenuItem.Name = "utilsUToolStripMenuItem";
+            this.utilsUToolStripMenuItem.Size = new System.Drawing.Size(65, 22);
+            this.utilsUToolStripMenuItem.Text = "Utils(&U)";
+            // 
+            // showTablesSToolStripMenuItem
+            // 
+            this.showTablesSToolStripMenuItem.Name = "showTablesSToolStripMenuItem";
+            this.showTablesSToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.showTablesSToolStripMenuItem.Text = "Show Tables(&S)";
+            this.showTablesSToolStripMenuItem.Click += new System.EventHandler(this.showTablesSToolStripMenuItem_Click);
             // 
             // Form_Main
             // 
@@ -149,6 +176,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setPasswordPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newDBNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem utilsUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showTablesSToolStripMenuItem;
     }
 }
 

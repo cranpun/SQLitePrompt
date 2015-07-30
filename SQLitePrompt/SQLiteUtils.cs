@@ -342,6 +342,15 @@ namespace SQLitePrompt
         }
         #endregion
 
+        static public void newdb(string path)
+        {
+            SQLiteUtils.path = path;
+
+            SQLiteUtils.open();
+
+            SQLiteUtils.close();
+        }
+
         static private void open()
         {
             #region usepass
